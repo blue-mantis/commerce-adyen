@@ -1,0 +1,49 @@
+{
+    "name": "bluemantis/commerce-adyen",
+    "description": "Adyen integration for Craft Commerce 2 and 3",
+    "type": "craft-plugin",
+    "version": "0.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "commerce adyen"
+    ],
+    "support": {
+        "docs": "https://github.com/blue-mantis/commerce-adyen/commerce-adyen/blob/master/README.md",
+        "issues": "https://github.com/blue-mantis/commerce-adyen/commerce-adyen/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bluemantis",
+            "homepage": "https://bluemantis.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.1.5",
+        "craftcms/commerce": "^2.0|^3.0",
+        "craftcms/commerce-omnipay": "^2.0.0",
+        "academe/omnipay-adyen": "^3.0"
+    },
+    "require-dev": {
+      "craftcms/cms": "^3.2.0",
+      "codeception/codeception": "^3.0",
+      "vlucas/phpdotenv": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "bluemantis\\commerceadyen\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Adyen for Craft Commerce",
+        "handle": "commerce-adyen",
+        "developer": "Bluemantis",
+        "developerUrl": "https://bluemantis.com",
+        "documentationUrl": "https://github.com/blue-mantis/commerce-adyen/commerce-adyen/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/blue-mantis/commerce-adyen/commerce-adyen/master/CHANGELOG.md",
+        "class": "bluemantis\\commerceadyen\\CommerceAdyen"
+    }
+}

@@ -1,0 +1,95 @@
+{% from "_includes/forms" import textField, lightswitchField, autosuggestField %}
+
+{{ autosuggestField({
+  label: 'Merchant Account'|t('commerce'),
+  id: 'merchantAccount',
+  class: 'ltr',
+  name: 'merchantAccount',
+  instructions: 'The main Merchant Account account name',
+  value: gateway.merchantAccount,
+  suggestEnvVars: true,
+  errors: gateway.getErrors('merchantAccount')
+}) }}
+
+{{ autosuggestField({
+  label: 'Skin Code'|t('commerce'),
+  id: 'skinCode',
+  class: 'ltr',
+  name: 'skinCode',
+  instructions: 'The sub-account name',
+  value: gateway.skinCode,
+  suggestEnvVars: true,
+  errors: gateway.getErrors('skinCode')
+}) }}
+
+{{ textField({
+  label: 'Country Code'|t('commerce'),
+  id: 'countryCode',
+  class: 'ltr',
+  name: 'countryCode',
+  instructions: 'GB, NZ, US, etc',
+  value: gateway.countryCode,
+  suggestEnvVars: true,
+  errors: gateway.getErrors('countryCode')
+}) }}
+
+{{ textField({
+  label: 'Currency Code'|t('commerce'),
+  id: 'currency',
+  class: 'ltr',
+  name: 'currency',
+  instructions: 'GBP, AUD, USD, etc',
+  value: gateway.currency,
+  suggestEnvVars: true,
+  errors: gateway.getErrors('countryCode')
+}) }}
+
+{{ autosuggestField({
+  label: 'Secret'|t('commerce'),
+  id: 'secret',
+  class: 'ltr',
+  name: 'secret',
+  instructions: 'The secret used for HMAC signing (HPP API)',
+  value: gateway.secret,
+  suggestEnvVars: true,
+  errors: gateway.getErrors('secret')
+}) }}
+
+{{ autosuggestField({
+  label: 'Public Key Token'|t('commerce'),
+  id: 'publicKeyToken',
+  class: 'ltr',
+  name: 'publicKeyToken',
+  instructions: 'Public Key Token aka "Library Token"',
+  value: gateway.publicKeyToken,
+  suggestEnvVars: true,
+  errors: gateway.getErrors('publicKeyToken')
+}) }}
+
+{{ autosuggestField({
+  label: 'Username'|t('commerce'),
+  id: 'username',
+  class: 'ltr',
+  name: 'username',
+  value: gateway.username,
+  suggestEnvVars: true,
+  errors: gateway.getErrors('username')
+}) }}
+
+{{ autosuggestField({
+  label: 'Password'|t('commerce'),
+  id: 'password',
+  class: 'ltr',
+  name: 'password',
+  value: gateway.password,
+  suggestEnvVars: true,
+  errors: gateway.getErrors('password')
+}) }}
+
+{{ lightswitchField({
+  label: "Test mode?"|t('commerce'),
+  name: 'testMode',
+  on: gateway.testMode,
+  errors: gateway.getErrors('testMode'),
+}) }}
+
