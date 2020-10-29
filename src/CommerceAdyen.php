@@ -10,7 +10,6 @@
 
 namespace bluemantis\commerceadyen;
 
-
 use bluemantis\commerceadyen\gateways\HostedPaymentPages;
 use Craft;
 use craft\base\Plugin;
@@ -79,8 +78,12 @@ class CommerceAdyen extends Plugin
 
     protected function registerEvents()
     {
-        Event::on(Gateways::class, Gateways::EVENT_REGISTER_GATEWAY_TYPES,  function(RegisterComponentTypesEvent $event) {
-            $event->types[] = HostedPaymentPages::class;
-        });
+        Event::on(
+            Gateways::class,
+            Gateways::EVENT_REGISTER_GATEWAY_TYPES,
+            function (RegisterComponentTypesEvent $event) {
+                $event->types[] = HostedPaymentPages::class;
+            }
+        );
     }
 }

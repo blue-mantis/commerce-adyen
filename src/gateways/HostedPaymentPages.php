@@ -143,7 +143,6 @@ class HostedPaymentPages extends OffsiteGateway
     {
         $authorizationTransaction = $this->getTransactionByType($transaction, TransactionRecord::TYPE_AUTHORIZE);
         return ($authorizationTransaction ? $authorizationTransaction : $transaction);
-
     }
 
     /**
