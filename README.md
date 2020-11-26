@@ -10,13 +10,11 @@ This plugin provides an [Adyen](https://www.adyen.com/) integration for [Craft C
 world use. Use at your own risk.</p>
 
 <h5>What it does</h5>
-    <ul>
-       <li>Supports <a href="https://docs.adyen.com/checkout/classic-integrations/hosted-payment-pages">Hosted Payment Pages</a></li>
-       <li>Supports Authorizations, Manual Captures, and Refunds</li>
-       <li>Supports Commerce 3 - should work with Commerce 2 but has not been tested</li>
-    </ul>
-, and should work for for Authorizations, Manual Captures and Refunds
-out of the box.</p>
+<ul>
+   <li>Supports <a href="https://docs.adyen.com/checkout/classic-integrations/hosted-payment-pages">Hosted Payment Pages</a></li>
+   <li>Supports Authorizations, Manual Captures, and Refunds</li>
+   <li>Supports Commerce 3 - should work with Commerce 2 but has not been tested</li>
+</ul>
 
 <h5>What it doesn't do</h5>
 <ul>
