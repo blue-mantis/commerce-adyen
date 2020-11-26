@@ -16,9 +16,10 @@ world use. Use at your own risk.</p>
    <li>Supports Commerce 3 - should work with Commerce 2 but has not been tested</li>
 </ul>
 
-<h5>What it doesn't do</h5>
+<h5>What it <b>doesn't</b> do</h5>
 <ul>
-    <li>Support any method other than Hosted Payment Pages. Please not that HPP is now marked as a "classic" integration</li>
+    <li>Support any method other than Hosted Payment Pages. Also note that HPP is now marked as a "classic" integration, 
+    so it's not using the latest version of the Adyen API</li>
     <li>Take payments automatically - it simply authorizes them, pending you going into Commerce and clicking to
     capture the funds</li>
 </ul>
